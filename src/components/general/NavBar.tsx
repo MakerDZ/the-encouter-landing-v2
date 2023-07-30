@@ -5,13 +5,14 @@ import { HiMenu } from 'react-icons/hi'
 import { Menu, Transition } from '@headlessui/react'
 import Image from 'next/image';
 import Link from 'next/link';
+import useSound from 'use-sound';
 
 const NavBar = () => {
+    const [play, { stop }] = useSound('/audio/click_song.mp3');
     const [scroll , setScroll] = useState(0);
     useEffect(()=>{
         if(typeof window != 'undefined'){
             window.addEventListener('scroll',updateScroll);
-            console.log(scroll);
             return () => {
                 window.removeEventListener('scroll', updateScroll);
             }
@@ -44,15 +45,15 @@ const NavBar = () => {
 
                 {/* Desktop Menu */}
                 <div className='hidden lg:flex flex-row text-[#5D5D5D] font-bold text-lg space-x-14'>
-                    <Link href="/devlog" className='hover:text-[#D804F9]'>
+                    <Link href="/devlog" onClick={() => {play()}} className='hover:text-[#D804F9]'>
                         Devlog
                     </Link>
 
-                    <Link href="/blog" className='hover:text-[#D804F9]'>
+                    <Link href="/blog" onClick={() => {play()}} className='hover:text-[#D804F9]'>
                         Blog
                     </Link>
 
-                    <Link href="/faq" className='hover:text-[#D804F9]'>
+                    <Link href="/faq" onClick={() => {play()}} className='hover:text-[#D804F9]'>
                         FAQ
                     </Link>
                 </div>
@@ -71,9 +72,9 @@ const NavBar = () => {
                 </div>
 
                 {/* Mobile Menu */}
-                <Menu as="div" className="lg:hidden">
+                <Menu as="div" className="lg:hidden" >
                     <Menu.Button>
-                        < HiMenu className='text-[#424242] text-3xl sm:text-4xl xl:hidden'/>
+                        < HiMenu onClick={() => {play()}} className='text-[#424242] text-3xl sm:text-4xl xl:hidden'/>
                     </Menu.Button>
                     <Transition
                         as={Fragment}
@@ -88,7 +89,7 @@ const NavBar = () => {
                             <div className="py-2">
                                 <Menu.Item>
                                     {({ active }: { active: boolean }) => (
-                                        <Link href="/devlog" className={classNames(
+                                        <Link href="/devlog" onClick={() => {play()}} className={classNames(
                                         active ? 'text-[#D804F9]' : 'text-[#5D5D5D]',
                                         'block px-4 py-2 text-base font-semibold'
                                         )}>
@@ -99,6 +100,7 @@ const NavBar = () => {
                                 <Menu.Item>
                                     {({ active }: { active: boolean }) => (
                                         <Link
+                                        onClick={() => {play()}}
                                         href="/blog"
                                         className={classNames(
                                             active ? ' text-[#D804F9]' : 'text-[#5D5D5D]',
@@ -112,6 +114,7 @@ const NavBar = () => {
                                 <Menu.Item>
                                     {({ active }: { active: boolean }) => (
                                         <Link
+                                        onClick={() => {play()}}
                                         href="/faq"
                                         className={classNames(
                                             active ? 'text-[#D804F9]' : 'text-[#5D5D5D]',
