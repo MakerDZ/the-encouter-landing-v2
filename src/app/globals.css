@@ -37,7 +37,6 @@ nextjs-portal {
   display: none;
 }
 
-
 @keyframes button-shadow-throb {
   0% {
     box-shadow: 0px 0px 0px 0px #6867F980, 0px 0px 0px 0px #6867F980, 0px 0px 0px 0px #6867F980;
