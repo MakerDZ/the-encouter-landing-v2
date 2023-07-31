@@ -33,6 +33,10 @@
 	animation-timing-function: linear ;
 }
 
+nextjs-portal {
+  display: none;
+}
+
 
 @keyframes button-shadow-throb {
   0% {

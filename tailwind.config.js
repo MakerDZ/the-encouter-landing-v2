@@ -11,7 +11,7 @@ module.exports = {
         'nunito': ['Nunito', 'sans-serif'],
       },
       screens: {
-        'xxs': '300px', // min-width
+        'xxs': '200px', // min-width
         'xs' : '400px',
         'sm' : '550px',
         'md' : '806px'

@@ -1,11 +1,14 @@
+"use client"
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import useSound from 'use-sound';
 import { MetaData } from '../../../lib/md/type/metaData'
 
 function BlogPreview(props: MetaData){
+  const [play, { stop }] = useSound('/audio/click_song.mp3');
   return (
-    <Link href={`/blog/${props.slug}`}>
+    <Link href={`/blog/${props.slug}`} onClick={()=>play()}>
         <section className='lg:w-[22rem] md:w-[20rem] sm:w-[15rem] xxs:w-[18rem]'>
           <div className='relative w-full h-auto'>
             <Image

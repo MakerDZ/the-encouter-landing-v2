@@ -6,7 +6,7 @@ import matter from "gray-matter";
 import getMetaData from '../../../../lib/md/getMetaData';
 
 const getPostContent = (slug: string) => {
-  const folder = "blogs/";
+  const folder = "devlogs/";
   const file = `${folder}${slug}.md`;
   const content = fs.readFileSync(file, "utf8");
   const matterResult = matter(content);
@@ -38,7 +38,7 @@ const BlogPage = (props: any) => {
       <div className='max-w-[70rem] h-auto mx-auto'>
         <div className='lg:max-w-[70rem] h-auto md:max-w-[45rem] sm:max-w-[35rem] max-w-[25rem] mx-auto'>
             <h1 className='text-transparent animate-fade-down animate-duration-1000 animate-ease-out text-center md:text-3xl sm:text-2xl xxs:text-xl text-lg font-black bg-clip-text bg-gradient-to-r from-text_left via-text_middle to-text_right'>{post.data.title}</h1>
-            <h2 className='text-[#5D5D5D] animate-fade-down animate-duration-1050 animate-ease-out font-extrabold md:text-xl sm:text-lg xxs:text-base text-sm text-center'>Written By {post.data.author}</h2>
+            <h2 className='text-[#5D5D5D] animate-fade-down animate-duration-1050 animate-ease-out font-extrabold md:text-xl sm:text-lg xxs:text-base text-sm text-center'>Devlog By {post.data.author}</h2>
             <p className='text-[#5D5D5D] animate-fade-down animate-duration-1900 md:text-lg sm:text-base xxs:text-sm text-xs font-semibold md:max-w-[33rem] sm:max-w-[29rem] max-w-[25rem] mx-auto text-center'>
               {post.data.date} 
             </p>

@@ -28,7 +28,7 @@ const NavBar = () => {
         <nav className={scroll >= 90 ? "w-full h-auto sticky top-0 z-50 transition-colors duration-500 backdrop-blur-xl bg-white/20 p-5 border-b border-slate-900/10" : "w-full h-auto sticky top-0 z-50 transition-colors duration-500 bg-white supports-backdrop-blur:bg-white/95 p-5"}>
             <div className='max-w-[70rem] mx-auto flex flex-row justify-between items-center'>
                 {/* Logo */}
-                <Link href="/">
+                <Link href="/" onClick={()=>{play()}}>
                     <div className='flex flex-row items-center'>
                         <div className='relative h-10 w-10 mr-3'>
                             <Image
