@@ -21,7 +21,7 @@ function BlogPreview(props: MetaData){
             />
           </div>
           <h1 className='text-[#5D5D5D] font-extrabold md:text-xl sm:text-lg xxs:text-base text-sm mt-6'>{props.title}</h1>
-          <p className='text-[#5D5D5D] sm:mt-4 mt-3 md:text-lg sm:text-base xxs:text-sm text-xs font-semibold md:max-w-[33rem] sm:max-w-[29rem] max-w-[25rem]'>
+          <p className='text-[#5D5D5D] sm:mt-4 mt-3 md:text-lg sm:text-base xxs:text-sm text-xs font-medium md:max-w-[33rem] sm:max-w-[29rem] max-w-[25rem]'>
                 {props.description}
           </p>
           <p className='text-[#5D5D5D] sm:mt-3 mt-2 md:text-base sm:text-sm xxs:text-xs text-[0.65rem] font-medium md:max-w-[33rem] sm:max-w-[29rem] max-w-[25rem]'>

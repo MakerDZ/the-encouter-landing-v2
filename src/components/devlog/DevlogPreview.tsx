@@ -20,6 +20,7 @@ const DevlogPreview = (props: MetaData) => {
                 <div className='text-[#5D5D5D] md:text-lg sm:text-base xxs:text-sm text-xs font-bold md:w-[11rem] sm:w-[9rem] xxs:w-[6rem] text-center'>
                     {props.date}
                 </div>
+                
                 <Link href={`/devlog/${props.slug}`} onClick={()=>play()}>
                     {/* Content */}
                     <div className='max-w-[37rem] md:px-0 sm:px-6 px-2 rounded-md'>

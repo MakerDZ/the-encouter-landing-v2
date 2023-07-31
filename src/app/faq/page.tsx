@@ -1,5 +1,5 @@
+import Cursor from '@/components/general/Cursor'
 import React from 'react'
-import Cursor from '@/components/general/Cursor';
 
 const FAQ = () => {
   return (

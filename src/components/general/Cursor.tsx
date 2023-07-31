@@ -1,11 +1,14 @@
 "use client"
-
-import AnimatedCursor from 'react-animated-cursor';
 import React from 'react'
+import dynamic from 'next/dynamic';
+
+const AnimatedCursor = dynamic(() => import('react-animated-cursor'), {
+    ssr: false
+});
 
 const Cursor = () => {
   return (
-    <main>
+    <div>
         <AnimatedCursor 
             showSystemCursor={true}
             innerSize={0}
@@ -20,7 +23,7 @@ const Cursor = () => {
             border: '1px solid #00000F'
             }}
         />
-    </main>
+    </div>
   )
 }
 

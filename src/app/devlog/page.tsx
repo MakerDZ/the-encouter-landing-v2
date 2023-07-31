@@ -1,7 +1,7 @@
 import DevlogPreview from '@/components/devlog/DevlogPreview';
-import Cursor from '@/components/general/Cursor';
 import React from 'react';
 import getMetaData from '../../../lib/md/getMetaData';
+import Cursor from '@/components/general/Cursor';
 
 const Devlog = () => {
   const devlogMetaData = getMetaData("devlogs/")

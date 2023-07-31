@@ -1,7 +1,7 @@
 import React from 'react';
 import BlogPreview from '@/components/blog/BlogPreview';
-import Cursor from '@/components/general/Cursor';
 import getMetaData from '../../../lib/md/getMetaData';
+import Cursor from '@/components/general/Cursor';
 
 const Blog = () => {
   const blogMetaData = getMetaData("blogs/");
