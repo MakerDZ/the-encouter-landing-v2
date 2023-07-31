@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import NavBar from '@/components/general/NavBar'
 import './globals.css'
 import type { Metadata } from 'next'
@@ -17,6 +18,7 @@ export default function RootLayout({
     <html lang="en">
       {/* max-w-[91rem] */}
       <body className='w-full h-auto mx-auto font-nunito'>
+        <Analytics />
         <NavBar />
         {children}
         <Footer />
