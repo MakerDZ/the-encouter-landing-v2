@@ -52,14 +52,14 @@ export default function Home() {
                   </Disclosure.Button>
                   <Transition
                     enter="transform transition duration-700 ease-in-out"
-                    enterFrom="-translate-y-full"
+                    enterFrom="-translate-y-10"
                     enterTo="translate-y-0"
                     leave="transform transition ease-in-out duration-700"
-                    leaveFrom="translate-y-full"
-                    leaveTo="-translate-y-full"
+                    leaveFrom="translate-y-0"
+                    leaveTo="-translate-y-10"
                   >
-                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-semibold px-4 md:py-4 sm:py-3 xxs:py-2'>
-                      No
+                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-medium px-4 md:py-4 sm:py-3 xxs:py-2 '>
+                      You will be able to make quick anonymous matches with random people from servers where the bot is invited. You don't need to join the official Discord server of Encounter. This feature will work from any server where the bot is invited. You will be able to chat in DM when you have matched with someone.
                     </Disclosure.Panel>
                   </Transition>
                 </>
@@ -85,14 +85,14 @@ export default function Home() {
                   </Disclosure.Button>
                   <Transition
                     enter="transform transition duration-700 ease-in-out"
-                    enterFrom="-translate-y-full"
+                    enterFrom="-translate-y-10"
                     enterTo="translate-y-0"
                     leave="transform transition ease-in-out duration-700"
                     leaveFrom="translate-y-full"
-                    leaveTo="-translate-y-full"
+                    leaveTo="-translate-y-10"
                   >
-                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-semibold px-4 md:py-4 sm:py-3 xxs:py-2'>
-                      No
+                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-medium px-4 md:py-4 sm:py-3 xxs:py-2'>
+                      Similar to Quick Match, instead of chatting in DM, this feature matches you with someone inside the server's private thread. This means the chat messages will be visible to server mods. The purpose of this feature is similar to a telephone bot but provides a more private environment within the server.
                     </Disclosure.Panel>
                   </Transition>
                 </>
@@ -118,14 +118,14 @@ export default function Home() {
                   </Disclosure.Button>
                   <Transition
                     enter="transform transition duration-700 ease-in-out"
-                    enterFrom="-translate-y-full"
+                    enterFrom="-translate-y-10"
                     enterTo="translate-y-0 "
                     leave="transform transition ease-in-out duration-700"
                     leaveFrom="translate-y-full"
-                    leaveTo="-translate-y-full"
+                    leaveTo="-translate-y-10"
                   >
-                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-semibold px-4 md:py-4 sm:py-3 xxs:py-2'>
-                      No
+                    <Disclosure.Panel className='bg-[#F5F5F5] text-[#424242] rounded-b-md border-l-2 border-r-2 border-b-2  md:text-xl sm:text-lg xxs:text-base text-xs font-medium px-4 md:py-4 sm:py-3 xxs:py-2'>
+                      This feature is for people who prefer quality matches. Do you know about a bottle message, right? It's like that. We can write whatever we want, such as feelings, hobbies, what we care, etc. Then, add tags to our message. Others can search for our envelope by tags. If they like it, they can keep our envelope, and we are matched to chat anonymously in DMs.
                     </Disclosure.Panel>
                   </Transition>
                 </>

@@ -9,7 +9,7 @@ function BlogPreview(props: MetaData){
   const [play, { stop }] = useSound('/audio/click_song.mp3');
   return (
     <Link href={`/blog/${props.slug}`} onClick={()=>play()}>
-        <section className='lg:w-[22rem] md:w-[20rem] sm:w-[15rem] xxs:w-[18rem]'>
+        <section className='lg:max-w-[22rem] md:max-w-[20rem] sm:max-w-[15rem] xxs:max-w-[18rem]'>
           <div className='relative w-full h-auto'>
             <Image
               src={props.thumbnail}
