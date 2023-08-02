@@ -4,6 +4,7 @@ import Markdown from "markdown-to-jsx";
 import matter from "gray-matter";
 import getMetaData from '../../../../lib/md/getMetaData';
 import BackButton from '@/components/general/BackButton';
+import Cursor from '@/components/general/Cursor';
 
 const getPostContent = (slug: string) => {
   const folder = "blogs/";
@@ -26,6 +27,7 @@ const BlogPage = (props: any) => {
   const post = getPostContent(slug);
   return (
     <main className='w-full h-auto px-5 md:mt-20 sm:mt-16 xs:mt-14 xxs:mt-12 md:mb-20 sm:mb-16 xs:mb-14 xxs:mb-12'>
+      <Cursor />
       <div className='max-w-[70rem] h-auto mx-auto'>
         <BackButton />
         <div className='lg:max-w-[70rem] h-auto md:max-w-[45rem] sm:max-w-[35rem] max-w-[25rem] mx-auto'>
