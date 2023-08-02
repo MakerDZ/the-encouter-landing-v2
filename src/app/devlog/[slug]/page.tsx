@@ -5,6 +5,12 @@ import matter from "gray-matter";
 import getMetaData from '../../../../lib/md/getMetaData';
 import BackButton from '@/components/general/BackButton';
 import Cursor from '@/components/general/Cursor';
+import { Metadata, ResolvingMetadata } from 'next'
+ 
+type Props = {
+ params: { slug: string }
+ searchParams: { [key: string]: string | string[] | undefined }
+}
 
 const getPostContent = (slug: string) => {
   const folder = "devlogs/";
@@ -13,6 +19,23 @@ const getPostContent = (slug: string) => {
   const matterResult = matter(content);
   return matterResult;
 };
+
+export async function generateMetadata(
+  { params, searchParams }: Props,
+  parent?: ResolvingMetadata
+  ): Promise<Metadata> {
+    
+  const slug = params.slug
+  const post = getPostContent(slug);
+  
+  return {
+    title: post.data.title,
+    description : post.data.description,
+    openGraph: {
+    images: [`${post.data.thumbnail}`],
+    },
+  }
+}
 
 export const generateStaticParams = async () => {
   const devlogs = getMetaData("devlogs/");

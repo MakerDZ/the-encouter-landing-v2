@@ -2,6 +2,11 @@ import DevlogPreview from '@/components/devlog/DevlogPreview';
 import React from 'react';
 import getMetaData from '../../../lib/md/getMetaData';
 import Cursor from '@/components/general/Cursor';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  description: 'Devlog : keep in touch with development',
+};
 
 const Devlog = () => {
   const devlogMetaData = getMetaData("devlogs/")

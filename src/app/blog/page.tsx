@@ -2,6 +2,11 @@ import React from 'react';
 import BlogPreview from '@/components/blog/BlogPreview';
 import getMetaData from '../../../lib/md/getMetaData';
 import Cursor from '@/components/general/Cursor';
+import { Metadata } from 'next';
+
+export const metadata: Metadata = {
+  description: 'The Blog | Get the latest info from Encounter',
+};
 
 const Blog = () => {
   const blogMetaData = getMetaData("blogs/");
