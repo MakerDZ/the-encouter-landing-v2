@@ -5,7 +5,7 @@ import Cursor from '@/components/general/Cursor';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  description: 'The Blog | Get the latest info from Encounter',
+  description: 'The Blog : Get the latest info from Encounter',
 };
 
 const Blog = () => {

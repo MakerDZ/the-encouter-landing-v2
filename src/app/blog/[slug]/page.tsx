@@ -6,11 +6,6 @@ import getMetaData from '../../../../lib/md/getMetaData';
 import BackButton from '@/components/general/BackButton';
 import Cursor from '@/components/general/Cursor';
 import { Metadata, ResolvingMetadata } from 'next'
- 
-type Props = {
- params: { slug: string }
- searchParams: { [key: string]: string | string[] | undefined }
-}
 
 const getPostContent = (slug: string) => {
   const folder = "blogs/";
@@ -20,21 +15,18 @@ const getPostContent = (slug: string) => {
   return matterResult;
 };
 
-export async function generateMetadata(
-  { params, searchParams }: Props,
-  parent?: ResolvingMetadata
-  ): Promise<Metadata> {
-    
-  const slug = params.slug
+export async function generateMetadata(props: any
+): Promise<Metadata> {
+  const slug = props.params.slug;
   const post = getPostContent(slug);
   
   return {
     title: post.data.title,
-    description : post.data.description,
+    description: post.data.description,
     openGraph: {
-    images: [`${post.data.thumbnail}`],
+      images: [`${post.data.thumbnail}`],
     },
-  }
+  };
 }
 
 
