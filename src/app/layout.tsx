@@ -6,7 +6,7 @@ import Footer from '@/components/general/Footer'
 
 export const metadata: Metadata = {
   title: 'The Encounter',
-  description: '🫣 Make A Paris Anonymously On Discord With Random Burmese People.',
+  description: '🫣 Make A Pairs Anonymously On Discord With Random Burmese People.',
 }
 
 export default function RootLayout({
