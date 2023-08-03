@@ -18,7 +18,7 @@ export default function Home() {
       <div className='max-w-[70rem] h-auto mx-auto'>
         <Cursor />
         <div className='lg:max-w-[70rem] h-auto md:max-w-[45rem] sm:max-w-[35rem] max-w-[25rem] mx-auto'>
-          <h1 className='text-transparent animate-fade-down animate-duration-1000 animate-ease-out text-center md:text-3xl sm:text-2xl xxs:text-xl text-lg font-black bg-clip-text bg-gradient-to-r from-text_left via-text_middle to-text_right'>Make A Paris Anonymously On Discord</h1>
+          <h1 className='text-transparent animate-fade-down animate-duration-1000 animate-ease-out text-center md:text-3xl sm:text-2xl xxs:text-xl text-lg font-black bg-clip-text bg-gradient-to-r from-text_left via-text_middle to-text_right'>Make A Pairs Anonymously On Discord</h1>
           <h2 className='text-[#5D5D5D] animate-fade-down animate-duration-1050 animate-ease-out font-extrabold md:text-xl sm:text-lg xxs:text-base text-sm text-center'>With Random Burmese People.</h2>
           <p className='text-[#5D5D5D] animate-fade-down animate-duration-1900 md:mt-9 sm:mt-7 xxs:mt-5 mb-6 md:text-lg sm:text-base xxs:text-sm text-xs font-semibold md:max-w-[33rem] sm:max-w-[29rem] max-w-[25rem] mx-auto text-center'>
             Encounter is a Discord bot that allows you to make anonymous matches with people from servers where the bot is invited.
